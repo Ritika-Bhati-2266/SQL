@@ -1,4 +1,3 @@
-CREATE DATABASE company2;
 CREATE TABLE employee2(
 	employee_id INT PRIMARY KEY,
 	name VARCHAR(100) NOT NULL,
