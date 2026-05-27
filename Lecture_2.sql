@@ -6,6 +6,5 @@ CREATE TABLE employee(
 	hire_date DATE,
 	salary NUMERIC(10,2)
 );
-SELECT * FROM employee;;
-
+SELECT * FROM employee;
 		
