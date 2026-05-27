@@ -19,6 +19,6 @@ ALTER TABLE employee
 RENAME COLUMN posiition to position;
 SELECT *FROM employee;
 
-TRUNCATE TABLE employee;
+TRUNCATE TABLE employee;;
 
 		

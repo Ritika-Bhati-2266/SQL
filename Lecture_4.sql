@@ -17,7 +17,6 @@ SELECT * FROM employee;
 
 ALTER TABLE employee
 RENAME COLUMN posiition to position;
-SELECT *FROM employee;
-
+SELECT *FROM employee;;
 
 		
