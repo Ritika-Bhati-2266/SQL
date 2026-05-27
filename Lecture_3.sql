@@ -13,4 +13,4 @@ INSERT INTO employee(name, position, department, hire_date, salary)
 		VALUES('Ajit Sharma', 'Data Analyst', 'Data Science', '2022-05-15', 65000.00),
 	    ('Priya', 'HR manager','Human Resources','2019-03-10',82000.00);
 
-SELECT * FROM employee;
+SELECT * FROM employee;;
