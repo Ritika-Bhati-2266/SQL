@@ -40,4 +40,8 @@ WHERE first_name LIKE 'J%';
 -- case sensitive
 -- WHERE first_name LIKE 'j%';
 
+-- 4) Find employees whose first_name contain a -Use LIKE Operators
+SELECT first_name
+FROM employee4
+WHERE first_name LIKE '%a%';
 
