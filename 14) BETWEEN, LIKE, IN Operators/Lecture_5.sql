@@ -1,0 +1,52 @@
+CREATE TABLE employee4(
+	employee_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL,
+	email VARCHAR(50),
+	department VARCHAR(20),
+	salary NUMERIC(10,2),
+	joining_date DATE,
+	age INT 
+);
+SELECT * FROM employee4;
+COPY
+employee4(employee_id, first_name, last_name, email, department	, salary, joining_date, age
+)
+FROM 'D:\Data Science\SQL\14) BETWEEN, LIKE, IN Operators\employee_data.csv'
+DELIMITER ','
+CSV HEADER;
+
+SELECT * FROM employee4;
+
+
+
+-- 1) Retrieve employees whose salary is between 40,000 and 60,000- Use BETWEEN Operators
+
+SELECT first_name, last_name, salary
+FROM employee4
+WHERE salary BETWEEN 40000 AND 60000;
+
+-- 2) Find employees whose email addresses end with gmail.com -Use LIKE Operators
+SELECT first_name, last_name, email
+FROM employee4
+WHERE email LIKE '%@gmail.com';
+
+
+-- 3) Find employees whose first_name start with J -Use LIKE Operators
+SELECT first_name
+FROM employee4
+WHERE first_name LIKE 'J%';
+
+-- case sensitive
+-- WHERE first_name LIKE 'j%';
+
+-- 4) Find employees whose first_name contain a -Use LIKE Operators
+SELECT first_name
+FROM employee4
+WHERE first_name LIKE '%a%';
+
+
+-- 5) Retrieve employees who belong to either the Finance or Marketing departments - Use IN operators
+SELECT first_name, last_name, department
+FROM employee4
+WHERE department IN ('Finance','Marketing');
