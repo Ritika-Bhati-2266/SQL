@@ -57,3 +57,9 @@ SELECT AVG(price) AS averagr_price
 FROM products
 WHERE category='Accessories' OR added_date> '2024-02-01';
 
+
+--Maximum and minimum
+SELECT MAX(price) AS MAX_PRICE,
+		MIN(price)AS MIN_PRICE
+FROM products;
+
