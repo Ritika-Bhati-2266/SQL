@@ -30,3 +30,13 @@ FROM products;
 SELECT product_name, category, price,
 		DENSE_RANK() OVER(PARTITION BY category ORDER BY price DESC) AS ranking
 FROM products;
+
+
+SELECT product_name, category, price,
+		SUM(price) OVER(ORDER BY price ASC) AS Running_Total
+FROM products;
+
+
+SELECT product_name, category, price,
+		AVG(price) OVER(ORDER BY price ASC) AS Running_Total
+FROM products;
