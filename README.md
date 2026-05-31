@@ -2,7 +2,7 @@
 
 > A structured, hands-on SQL learning repository covering everything from database creation and CRUD operations to Window Functions and Joins.
 
-![Topics](https://img.shields.io/badge/Topics-26-blue) ![Commits](https://img.shields.io/badge/Commits-62-green) ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange)
+![Topics](https://img.shields.io/badge/Topics-26-blue) ![Commits](https://img.shields.io/badge/Commits-65-green) ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange)
 
 ---
 
