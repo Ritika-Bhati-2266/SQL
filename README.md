@@ -2,13 +2,13 @@
 
 > A structured, hands-on SQL learning repository covering everything from database creation and CRUD operations to Window Functions and Joins.
 
-![Topics](https://img.shields.io/badge/Topics-25-blue) ![Commits](https://img.shields.io/badge/Commits-49-green) ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange)
+![Topics](https://img.shields.io/badge/Topics-26-blue) ![Commits](https://img.shields.io/badge/Commits-62-green) ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange)
 
 ---
 
 ## 📖 About
 
-This repository is organized into **25 folders**, each dedicated to a specific SQL concept. Whether you're just starting out or looking to solidify advanced skills, you'll find clearly structured scripts, examples, and notes for every topic.
+This repository is organized into **26 folders**, each dedicated to a specific SQL concept. Whether you're just starting out or looking to solidify advanced skills, you'll find clearly structured scripts, examples, and notes for every topic.
 
 ---
 
@@ -61,7 +61,7 @@ cd SQL
 | 15 | Other Operators | `IS NULL`, `IS NOT NULL`, `EXISTS`, and more |
 | 16 | Set Operators | `UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT` |
 
-### 🔴 Advanced (17 – 25)
+### 🔴 Advanced (17 – 26)
 
 | # | Topic | Description |
 |---|-------|-------------|
@@ -74,6 +74,7 @@ cd SQL
 | 23 | COALESCE Function | Handling `NULL` values with `COALESCE` and `NULLIF` |
 | 24 | Window Function | `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, `OVER` |
 | 25 | Joins in SQL | `INNER`, `LEFT`, `RIGHT`, `FULL`, `CROSS` joins |
+| 26 | Joins (Advanced) | Self joins, multi-table joins, and complex join conditions |
 
 ---
 
@@ -85,7 +86,7 @@ SQL/
 ├── 02) Inserting data in Table/
 ├── 03) Deleting Rows, Columns from Table/
 ├── ...
-└── 25) Joins in SQL/
+└── 26) Joins (Advanced)/
 ```
 
 ---
@@ -94,7 +95,7 @@ SQL/
 
 ```
 Beginner ──────────────► Intermediate ──────────────► Advanced
-(Topics 01–08)            (Topics 09–16)               (Topics 17–25)
+(Topics 01–08)            (Topics 09–16)               (Topics 17–26)
 Database basics           Operators & CSV import        Functions & Joins
 CRUD operations           Filtering & Set ops           Window functions
 ```
