@@ -49,3 +49,10 @@ SELECT TRIM(' Monitor  ')AS Trimmed_Text;
 
 SELECT LENGTH(' Monitor  ')AS Trimmed_Text;
 
+-- Replace the word "phone" with "device" in product names
+SELECT REPLACE(product_name,'phone', 'device') AS updated
+FROM products;
+
+-- Get the first 3 characters from category
+SELECT LEFT(category, 3) AS Category_Captial
+FROM products;
