@@ -28,3 +28,23 @@ FROM products;
 -- Get all the categories in lowercase
 SELECT LOWER(category) AS Category_lower
 FROM products;
+
+-- Join product_name and category text with hyphen
+SELECT CONCAT(product_name,'-', category) AS product_details
+FROM products;
+
+-- Extract the first 5 characters from product_name
+SELECT SUBSTRING(product_name,1,5) AS short_name
+FROM products;
+
+-- Count length
+SELECT LENGTH(product_name) AS COUNT_OF_CHAR
+FROM products;
+
+SELECT product_name, LENGTH(product_name) AS COUNT_OF_CHAR
+FROM products;
+
+-- Remove leading and tariling spaces from string
+SELECT TRIM(' Monitor  ')AS Trimmed_Text;
+
+SELECT LENGTH(' Monitor  ')AS Trimmed_Text;

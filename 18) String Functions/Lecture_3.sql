@@ -28,3 +28,7 @@ FROM products;
 -- Get all the categories in lowercase
 SELECT LOWER(category) AS Category_lower
 FROM products;
+
+-- Join product_name and category text with hyphen
+SELECT CONCAT(product_name,'-', category) AS product_details
+FROM products;
