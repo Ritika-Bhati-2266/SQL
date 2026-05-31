@@ -27,3 +27,38 @@ SELECT * FROM products;
 SELECT product_name,
 	TO_CHAR(added_date, 'DD-MM-YY') AS Age_since_added
 FROM products;
+
+-- 2) DATE_PART() - Get Specific Date Part
+-- Extract the day of the week from added_date.
+SELECT product_name, added_date,
+	DATE_PART('dow',added_date) AS day_of_week
+FROM products;
+
+SELECT product_name, added_date,
+	DATE_PART('month',added_date) AS day_of_week
+FROM products;
+
+-- 3) DATE_TRUNC() - Trunucate date to precision
+-- Trunucate added_date to the start of the month
+SELECT product_name,added_date,
+		DATE_TRUNC('month', added_date) AS Month_start
+FROM products;
+
+SELECT product_name,added_date,
+		DATE_TRUNC('week', added_date) AS week_start,
+		DATE_PART('isodow', added_date) AS day_of_week
+FROM products;
+
+-- 4) INTERNAL - Add or subtract time intervals
+-- Add 6 months to the added_date.
+SELECT product_name, added_date,
+		added_date + INTERVAL '6 DAYS' AS new_date
+FROM products;
+
+SELECT product_name, added_date,
+		added_date + INTERVAL '6 MONTH' AS new_date
+FROM products;
+
+-- 5) CURRENT_TIME() - Get Current Time
+-- Retrieve only the current time.
+SELECT CURRENT_TIME AS Current_time;
